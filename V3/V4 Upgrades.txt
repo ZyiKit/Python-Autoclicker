@@ -1,0 +1,9 @@
+the user friendly problem is solved, it is repeatable by user and can store values in a notepad externally all using the program to execute measuring function and creating file function for storing all cps values in a testing range.
+
+However I am starting to notice that my cps measurer isn't really consistent especially when there is different amount of backlog my computer have
+
+The good news is under similar conditions the cps variance is low enough within a 0.5 cps range which means it's accurate enough for testing purposes.
+
+
+
+

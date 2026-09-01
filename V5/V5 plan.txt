@@ -1,0 +1,3 @@
+After checking with Claude I figured this autoclicker is already advanced enough to make clicking behavior similar to human, with just laplace random distribution for autoclicker instantaneous cps the bot is almost indistinguishable from human.
+
+Also need to update my measurer to calculate for kurtosis as well as autocorrelation

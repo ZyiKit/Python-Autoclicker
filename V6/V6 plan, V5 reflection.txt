@@ -1,0 +1,41 @@
+Overall so far decent success, in terms of all functions being successful.
+
+-CPS detector works well
+-CPS graph works
+-Kurtosis graph works (distribution graph)
+-Autocorrelation graph works
+
+Autoclicker
+-Base autoclicker works
+-Relatively accurate measurement, meaning when I put 12 cps I get around 12 cps(not exactly but very close)
+-Random, gauss and laplace distribution all works
+-Mana drain works
+-toggle controls only so far
+
+Problems
+
+CPS detector,
+just because the function works doesn't mean I am able to detect autoclicker consistently, with V6 even with kurtosis and autocorrelation I couldn't reliably distinguish between human and autoclicker by looking at the graph
+
+Autoclicker,
+Needs to  be more user friendly, toggle key can't be changed and it is not a proper app in the sense you can turn on and off. There should be a sound when toggled, and a background hue to show it is still on. Toggle should be changed to hold since. Lastly, when I am holding control or other keys my toggle for autoclicker doesn't seem to register need to fix.
+
+Thoughts,
+
+When autoclicker is using just a laplace distribution to randomise clicks, mana drain is very hard to be distinguished from human behavior.
+
+The autoclicker detector can suss out uniform random autoclicker (not gauss or laplace). But it becomes very hard to find differences between human random behavior and laplace distribution.
+
+I would focus on upgrading the autoclicker and CPS measurement software to be more user friendly for now
+
+Plan one 
+- include a hold function that can be changed to toggle or hold
+- include function that can change my keybind to anything
+- Adding a quit key
+
+
+- make it so I can assign one to left click and the other to right click
+- include function that makes it so my hold or toggle will work regardless of what other key I am holding so won't be interfered by like ctrl button
+- Add options to choose drain
+
+*The settings can be only available to altered in code only, we don't need it to be user friendly just functionable, no use trying to half-ass package it now as we most likely have to redo everything later for proper packaging

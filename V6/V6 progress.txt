@@ -1,0 +1,9 @@
+Implementation for taking buttons from mouse or keyboard for toggle is successful, the toggle can now be changed to different keys it is just that we would need to make it user friendly, but we can worry about that when we are packaging it
+
+Holding button toggle method works for both mouse and keyboard
+
+ESC is now added as a failsafe to kill the code in case anything fails
+
+Reflection after testing:
+
+Need a mana drain reset otherwise cps gets too low

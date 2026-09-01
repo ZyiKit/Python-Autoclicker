@@ -1,0 +1,3 @@
+Plan is to just mix everything together, listener for keybind, GUI and the base backend of autoclicker
+
+I will also put an installer for packaging purposes

@@ -1,0 +1,11 @@
+The first version works well in it's basic function. It can auto click on toggle (I set to p key bind) and 
+you can even choose a cps.
+
+However the cps you choose doesn't correlate exactly to your actual cps due to latency and python not being able 
+to multithread properly (it uses a pseudo multithread), at 10 cps the changes can't really be noticed but around 80 to 90 cps
+the drop from theoretical cps to measured cps is around 5 cps.
+
+To fix this I need to look into how to multithread properly or whether there are any other functions.
+
+On the next version, I plan to implement a function that lets user determine what key bind it stores and also remembers that key bind.
+Also fix the cps drop problem at higher cps values.

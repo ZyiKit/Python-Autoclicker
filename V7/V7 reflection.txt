@@ -1,0 +1,5 @@
+V7 reflection
+
+It is impossible to make a autoclicker that takes both keys if we want to use single thread, we would need to use multiprocessing NOT multithreading,
+
+I will only do for one key at one application, if user want to use 2 keys at a time they can just open two autoclickers

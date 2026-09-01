@@ -1,0 +1,5 @@
+-File sometime works to load sometime doesn't (suspecting something related to closing)
+
+-Toggle function doesn't work at all
+
+-key detector doesn't work as well due to python weird rules and json weird rules

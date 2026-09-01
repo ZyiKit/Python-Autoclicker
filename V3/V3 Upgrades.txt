@@ -1,0 +1,24 @@
+I kept my auto clicker the same I just upgraded my cps measurement code
+
+In V1 of cps measurement I use multithread one for counting whether time passed is 5 and 
+python's base mouse listener to listen to clicks
+
+The problem is since python doesn't actually have multithread the while true loop was taking
+a lot of resources and since I am using a function that takes current - initial time 
+every time it slows down the process and makes it really slow, so much so my own python cps
+measurement app is worse than a web cps measurement function.
+
+In v2 I removed the time calculation and put all clicks timestamp in a list in the python
+every time a click is registered, this takes up a lot less resource as the click listener function doesn't have to compete with a while loop for processing speed. Initially made it append a timestamp to a file every click occurred but that is too slow and I use python's internal list to store timestamps first before transferring it into a file.
+
+In v3 the discrepancy of the cps measured with the python cps tester is less in terms of less standard deviation and more reliability and being closer to the "Theoretical CPS". However it is important to note that the "Theoretical CPS" might not be the exact CPS as the overhead I assume for the python code is measured with the website CPS tester, so that overhead might not be exactly be the same for raw internal python code.
+However this will be reliable enough for me to conduct my test.
+
+
+
+The problem now is my cps measurement isn't really user-friendly since I made it start measuring cps the moment you entered (so macro is already on before you start) and it just stops when right click is hit.
+
+I need to make it more user friendly by introducing a system that only activates this cps thing once the first click is made and automatically stops after 5 seconds. Making it stop automatically after 5 seconds or a particular time is hard since you need to constantly check for time passed and with while loop it cost a lot of resource as it constantly run and isn't the same as a mouse.Listener function that only runs when a click is hit. I might assign an off-switch since it already works well with right click as off switch. 
+
+I also plan to make it so it can store cps values in a file with time taken and total clicks, and make it so I can repeatedly add more cps measurements to it without damaging the file.
+

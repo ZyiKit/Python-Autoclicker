@@ -1,0 +1,11 @@
+The auto clicker is now a lot more stable and can run accurately according to 
+user's input up to around 150 cps, that will be sufficient for this product.
+
+The cps tester is built since I want a method to collect data regarding the clicks
+from auto clicker to measure variation and movement in the future.
+
+A problem is that the cps tester is not very accurate when measuring own input, even less
+accurate than a website's cps tester.
+
+In the future I will try to develop a cps tester that plots data directly in an excel sheet
+to get that data directly, hopefully this is practical.
